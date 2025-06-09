@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" name="chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="org.example.framework.tests.TestLogin"/>
+            <class name="org.example.framework.tests.TestDashBord"/>
+        </classes>
+    </test>
+    <test verbose="2" name="edge">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="org.example.framework.tests.TestLogin"/>
+            <class name="org.example.framework.tests.TestDashBord"/>
+        </classes>
+    </test>
+</suite>
